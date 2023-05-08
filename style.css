@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
+input{
+    background: #40414f;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+    color: #ffffff;
+}
+.auth-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202123;
+}
+.auth{
+    width: 40vw;
+    height: 40vh;
+    background: #202123;
+    border-radius: 10px;
+    padding: 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.auth > input{
+    min-width: 300px;
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 3px;
+    background: #40414f;
+}
+.auth > button{
+    min-width: 150px;
+    width: 20%;
+    height: 30px;
+    background: #40414f;
+    border: 0px;
+    transition: .1s;
+    border-radius: 3px;
+}
+.auth > button:hover{
+    background: #4c4d5c;
+}
+.chat{
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    display: flex;
+}
+.chats{
+    width: 13vw;
+    height: 100%;
+    background: #202123;
+}
+.info{
+    width: 100%;
+    height: 50px;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+}
+.global-chat{
+
+    width: 87vw;
+    height: 100%;
+    background: #353741;
+}
+.global-chat > ul{
+    min-width: 100%;
+    min-height: 87%;
+    height: 87%;
+    background: #343541;
+    list-style-type: none;
+    overflow-y: auto;
+}
+.global-chat > ul > li{
+    padding: 23px 27%;
+    font-weight: 400;
+    line-height: 1.7;
+    display: flex;
+}
+.me{
+    flex-direction: row-reverse;
+    text-align: right;
+    background: #343541;
+}.from{
+    background: #444654;
+}.sender-name{
+    width: 100px;
+    height: 100%;
+    text-align: right;
+    margin-right: 10px;
+    margin-left: -110px;
+}
+
+.inputs{
+    width: 100%;
+    height: 13%;
+    background: rgb(53,55,64);
+    background: linear-gradient(0deg, rgba(53,55,64,1) 0%, rgba(52,53,65,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputs > input{
+    min-width: 50%;
+    height: 50px;
+    border: 0px;
+    outline: 0px;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 0px 10px 1px #202123;
+}
+.inputs > button{
+    width: 60px;
+    background: #40414f;
+    height: 50px;
+    border: 0px;
+    outline: 0px;
+    padding: 10px;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 0px 10px 1px #202123;
+}
+
+@media screen and (max-width: 1000px) {
+    .chats{
+        display: none;
+    }
+    .global-chat{
+        width: 100%;
+    }
+}
